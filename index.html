@@ -71,8 +71,8 @@ h2{font-size:23px;color:var(--navy);font-weight:700;margin-bottom:16px}
 /* days */
 .days{list-style:none;position:relative}
 .days:before{content:'';position:absolute;left:62px;top:10px;bottom:10px;width:2px;background:var(--line)}
-.days li{display:grid;grid-template-columns:52px 1fr;gap:22px;padding:11px 0;position:relative}
-.days li:after{content:'';position:absolute;left:56px;top:17px;width:12px;height:12px;border-radius:50%;background:var(--ivory);border:2px solid var(--navy)}
+.days li{display:grid;grid-template-columns:52px 1fr;gap:32px;padding:11px 0;position:relative}
+.days li:after{content:'';position:absolute;left:57px;top:18px;width:12px;height:12px;border-radius:50%;background:var(--ivory);border:2px solid var(--navy)}
 .days li.p:after{background:var(--gold);border-color:var(--gold)}
 .days .d{text-align:right;font-family:'GmarketSans',sans-serif;font-weight:700;color:var(--navy);font-size:15px;line-height:1.2}
 .days .d small{display:block;font-family:'Noto Sans KR';font-weight:400;color:var(--mute);font-size:11.5px;margin-top:3px}
@@ -104,7 +104,7 @@ h2{font-size:23px;color:var(--navy);font-weight:700;margin-bottom:16px}
 .dm b{display:block;font-family:'GmarketSans',sans-serif;font-size:20px;color:var(--gold2);margin-bottom:4px}
 footer{padding:26px 20px calc(30px + env(safe-area-inset-bottom));font-size:12px;color:var(--mute);line-height:1.7}
 footer .wrap{padding:0}
-@media(max-width:360px){.wrap{padding:0 16px}.hero h1{font-size:33px}.big{font-size:38px}.stats div b{font-size:19px}.days li{grid-template-columns:46px 1fr;gap:18px}.days:before{left:55px}.days li:after{left:50px}.line .dot span{font-size:10.5px}}
+@media(max-width:360px){.wrap{padding:0 16px}.hero h1{font-size:33px}.big{font-size:38px}.stats div b{font-size:19px}.days li{grid-template-columns:46px 1fr;gap:28px}.days:before{left:56px}.days li:after{left:51px}.line .dot span{font-size:10.5px}}
 @media(min-width:768px){.wrap{max-width:640px}.two{grid-template-columns:1fr 1fr}.ports{grid-template-columns:1fr 1fr}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 button:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
@@ -132,11 +132,11 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offse
  <p class="lead">여행 경비와 크루즈 객실비를 나눠서 보여드려요. 2인 1실 기준이에요.</p>
  <div class="tabs" role="tablist"><button type="button" role="tab" aria-selected="true" data-t="p1">여행 경비</button><button type="button" role="tab" aria-selected="false" data-t="p2">크루즈 객실</button></div>
  <div class="panel on" id="p1"><div class="card">
-  <div style="font-weight:700;color:var(--navy)">항공 포함 지상비 (크루즈 제외)</div>
+  <div style="font-weight:700;color:var(--navy)">1인 예상 경비 (크루즈 제외)</div>
   <div class="big">300<small>만원</small></div>
-  <div class="inst">카드 결제 시 10% 추가 (330만원) · 5개월 할부면 월 66만원</div>
-  <div class="rows"><div class="r"><span>인천–바르셀로나 왕복 항공</span><b>포함</b></div><div class="r"><span>바르셀로나 호텔 1박 (2인 1실)</span><b>포함</b></div><div class="r"><span>공항·호텔·크루즈 터미널 전 구간 이동</span><b>포함</b></div><div class="r"><span>관광지 입장료 · 하선일 바르셀로나 투어</span><b>포함</b></div><div class="r"><span>인솔</span><b>포함</b></div></div>
-  <p class="note">현금·계좌이체 기준 금액이에요. 크루즈 안 식사는 크루즈 요금에 포함되고, 기항지 식사와 커피는 개별 부담이에요. 결제는 여행사를 통해 카드로 진행해요. 무이자 여부는 카드사마다 달라요.</p>
+  <div class="inst">항공료 실비 + 공동경비 · 카드 결제 시 10% 추가</div>
+  <div class="rows"><div class="r"><span>인천–바르셀로나 왕복 항공료</span><b>실비</b></div><div class="r"><span>바르셀로나 호텔 1박 (2인 1실)</span><b>공동경비</b></div><div class="r"><span>공항·호텔·터미널 전 구간 이동</span><b>공동경비</b></div><div class="r"><span>관광지 입장료 · 하선일 투어</span><b>공동경비</b></div><div class="r"><span>인솔</span><b>공동경비</b></div></div>
+  <p class="note">항공료는 실제 발권 금액 그대로, 나머지는 공동경비로 함께 나눠 써요. 현금·계좌이체 기준이고 크루즈 안 식사는 크루즈 요금에 포함돼요. 기항지 식사와 커피는 개별 부담이에요. 카드 결제 시 10%가 추가되고, 무이자 여부는 카드사마다 달라요.</p>
  </div></div>
  <div class="panel" id="p2"><div class="card">
   <div class="cabins"><button type="button" aria-pressed="false">인사이드<span>창문 없음</span></button><button type="button" aria-pressed="false">오션뷰<span>바다 창문</span></button><button type="button" aria-pressed="false">발코니<span>개인 테라스</span></button></div>
@@ -146,7 +146,7 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offse
    <div class="r"><span>1인으로 나누면</span><b id="cPer"></b></div>
   </div>
   <div class="zero">리워드를 충분히 모아둔 분은 <b>객실비 0원</b>으로도 갈 수 있어요.</div>
-  <p class="note">시작가 기준이며 객실 위치·예약 시점에 따라 달라져요. 선상팁 (1박 €12, 7박 약 €84)은 별도예요. 리워드는 현금이 아닌 크루즈 할인으로 사용해요.</p>
+  <p class="note">시작가 기준이며 객실 위치·예약 시점에 따라 달라져요. MSC는 선상팁이 객실 요금에 미리 포함돼 있어요. 리워드는 현금이 아닌 크루즈 할인으로 사용해요.</p>
  </div></div>
 </div></section>
 
@@ -161,13 +161,13 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--gold);outline-offse
 </div></section>
 
 <section style="padding-top:0"><div class="wrap two">
- <div class="box in"><h3>포함</h3><ul><li>크루즈 7박 객실과 선상 식사</li><li>인천–바르셀로나 왕복 항공</li><li>바르셀로나 호텔 1박</li><li>전 구간 이동비 · 하선일 시내 투어</li><li>관광지 입장료</li><li>인솔</li></ul></div>
- <div class="box out"><h3>불포함</h3><ul><li>크루즈 객실비 (리워드로 0원 가능)</li><li>선상팁 (7박 약 €84)</li><li>기항지 식사 · 커피</li><li>선상 음료 · 와이파이</li><li>여행자 보험 · 개인 경비</li></ul></div>
+ <div class="box in"><h3>포함</h3><ul><li>크루즈 7박 객실과 선상 식사</li><li>선상팁 (객실 요금에 미리 포함)</li><li>인천–바르셀로나 왕복 항공 (실비)</li><li>바르셀로나 호텔 1박</li><li>전 구간 이동비 · 하선일 시내 투어</li><li>관광지 입장료</li><li>인솔</li></ul></div>
+ <div class="box out"><h3>불포함</h3><ul><li>크루즈 객실비 (리워드로 0원 가능)</li><li>기항지 식사 · 커피</li><li>선상 음료 · 와이파이</li><li>여행자 보험 · 개인 경비</li></ul></div>
 </div></section>
 
 <section style="background:#fff;border-top:1px solid var(--line)"><div class="wrap">
  <div class="over">How to join</div><h2>참여 방법</h2>
- <ol class="steps"><li>원하는 객실 타입을 정해요</li><li>DM으로 참여 의사를 남겨요</li><li>크루즈 객실 예약 (멤버십 회원 계정)</li><li>여행 경비는 여행사로 카드 결제 (할부 가능)</li></ol>
+ <ol class="steps"><li>원하는 객실 타입을 정해요</li><li>DM으로 참여 의사를 남겨요</li><li>크루즈 객실 예약 (멤버십 회원 계정)</li><li>항공료 실비 + 공동경비 입금 (카드 결제 시 10% 추가)</li></ol>
  <div class="dm"><b>함께 떠나요</b>궁금한 점은 DM 주세요.</div>
 </div></section>
 
